@@ -15,7 +15,7 @@ class AccountUsage(str, Enum):
 
 
 class AccountSchema(BaseModel):
-    id: Optional[str] =  Field(default=None, pattern="^acct_[a-zA-Z0-9]{24}$")
+    id: Optional[str] = Field(default=None, pattern="^acct_[a-zA-Z0-9]{24}$")
     type: AccountType
     usage: AccountUsage
     iban: str

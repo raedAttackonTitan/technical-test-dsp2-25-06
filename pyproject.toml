@@ -1,0 +1,17 @@
+[project]
+name = "technical-test-25-06"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "black>=25.1.0",
+    "pydantic>=2.11.7",
+    "pydantic-settings>=2.10.1",
+    "requests>=2.32.4",
+]
+[tool.setuptools]
+packages = [
+"account_manager",
+"models",
+
+]

@@ -12,6 +12,7 @@ class BalanceType(str, Enum):
     PRCD = "PRCD"
     OTHR = "OTHR"
 
+
 class BalanceSchema(BaseModel):
     id: Optional[str] = Field(default=None, pattern="^blnc_[a-zA-Z0-9]{24}$")
     name: str
